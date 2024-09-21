@@ -1,0 +1,35 @@
+[06/23/09 15:03:25 Paris, Madrid (heure d'été)]::Client Status [ConnId=0, PID=1632]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  67664232 01:00103232
+Module: C:\ora_dev\BIN\ORA805.dll
+
+System Information:
+Operating System: Windows NT Version 5.1 Build 2600 Service Pack 2
+Command line: "C:\ora_dev\BIN\ifrun60.EXE"  "E:\PFE\Interface_PFE\Forms_PFE_juste\forms_menu.fmx"
+FORM/BLOCK/FIELD: HELP_DESK:HELPDESK.NOM_MAT_PAN
+Last Trigger: WHEN-BUTTON-PRESSED - (Execution Suspended)
+Msg: <NULL>
+Last Builtin: EXECUTE_QUERY - (Successfully Completed)
+
+Registers:
+EAX:00000000
+EBX:0012EBD6
+ECX:00000001
+EDX:0012EBD6
+ESI:02A02780
+EDI:00000000
+CS:EIP:001B:67664232
+SS:ESP:0023:0012E918  EBP:0012E940
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010293
+
+
+Call stack:
+Address   Frame
+67664232  0012E940  vsnupr
+6760E5A8  0012EB08  kpugattr
+67561BC0  0012EB28  xOCIAttrGet
+
